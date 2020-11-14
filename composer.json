@@ -1,0 +1,36 @@
+{
+    "name": "invibe-sk/kvetyprevas",
+    "description": "Kvetyprevas API wrapper for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Ondrejkovič",
+            "email": "adam.ondrejkovic@invibe.sk"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "php": "^7.4",
+        "laravel/framework": "^8.0",
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Invibe\\KvetyPreVas\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Invibe\\KvetyPreVas\\KvetyPreVasServiceProvider"
+            ],
+            "aliases": {
+                "KvetyPreVas": "Invibe\\KvetyPreVas\\Facades\\KvetyPreVas"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.5"
+    }
+}
