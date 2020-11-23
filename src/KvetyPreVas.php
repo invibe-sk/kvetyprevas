@@ -345,4 +345,19 @@ class KvetyPreVas
 
         return $response;
     }
+
+    /**
+     * @param $data
+     * @return mixed
+     * @throws GuzzleException
+     * @author Adam Ondrejkovic
+     */
+    public function validateOrder($data)
+    {
+        $response = $this->client->post("orders/validate", [RequestOptions::FORM_PARAMS => $data]);
+
+        $response = json_decode($response->getBody());
+
+        return $response;
+    }
 }
