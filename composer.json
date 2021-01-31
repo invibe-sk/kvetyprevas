@@ -11,8 +11,8 @@
     ],
     "require": {
         "ext-json": "*",
-        "php": "^7.4",
-        "laravel/framework": "7 - 8",
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0",
         "guzzlehttp/guzzle": "^7.0"
     },
     "autoload": {
@@ -31,6 +31,6 @@
         }
     },
     "require-dev": {
-        "orchestra/testbench": "^5.5"
+        "orchestra/testbench": "^6.11"
     }
 }
